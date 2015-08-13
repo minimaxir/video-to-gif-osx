@@ -6,9 +6,9 @@ The primary intent for this tool is used with Quicktime Movie files obtained fro
 
 The tool comes in three forms, depending on user needs:
 
-* **Convert Video to GIF** - A OS X Service which adds a "Convert Video to GIF" right-click menu item to all video files, which outputs a GIF of the video in the same folder of the source(s).
-* **video_to_gif_osx.sh** - A Shell script which accepts video(s) as parameter(s) and outputs a GIF of the video in the same folder of the source(s).
-* **Convert Video to GIF App** - An Application which prompts the user for video(s) and outputs a GIF of the video in the same folder of the source(s).
+* **[Convert Video to GIF](https://github.com/minimaxir/video-to-gif-osx/raw/master/Convert%20Video%20to%20GIF.zip)** - A OS X Service which adds a "Convert Video to GIF" right-click menu item to all video files, which outputs a GIF of the video in the same folder of the source(s). (file must be unzipped on desktop)
+* **[video_to_gif_osx.sh](https://raw.githubusercontent.com/minimaxir/video-to-gif-osx/master/video_to_gif_osx.sh)** - A Shell script which accepts video(s) as parameter(s) and outputs a GIF of the video in the same folder of the source(s).
+* **[Convert Video to GIF App](https://github.com/minimaxir/video-to-gif-osx/raw/master/Convert%20Video%20to%20GIF%20App.zip)** - An Application which prompts the user for video(s) and outputs a GIF of the video in the same folder of the source(s). (file must be unzipped on desktop; when prompted for security warning go to "Security and Privacy" in System Preference and allow Convert Video to GIF App to run)
 
 ## Installation
 
