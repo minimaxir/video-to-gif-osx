@@ -2,10 +2,12 @@
 
 This repository contains a set of utilities that allow the user to easily convert video files to high-quality, low file size GIFs on OS X. This post is a complement to my blog post [Making a Video-to-GIF Right-Click Menu Item in OS X](http://minimaxir.com/2015/08/gif-to-video-osx/)
 
+The primary intent for this tool is used with Quicktime Movie files obtained from using the Screen Recording feature on OS X or iOS input.
+
 The tool comes in three forms, depending on user needs:
 
 * **Convert Video to GIF** - A OS X Service which adds a "Convert Video to GIF" right-click menu item to all video files, which outputs a GIF of the video in the same folder of the source(s).
-* **osx_video_to_gif.sh** - A Shell script which accepts video(s) as parameter(s) and outputs a GIF of the video in the same folder of the source(s).
+* **video_to_gif_osx.sh** - A Shell script which accepts video(s) as parameter(s) and outputs a GIF of the video in the same folder of the source(s).
 * **Convert Video to GIF App** - An Application which prompts the user for video(s) and outputs a GIF of the video in the same folder of the source(s).
 
 ## Installation
