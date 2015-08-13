@@ -1,6 +1,6 @@
 # Convert Video to GIF on OSX
 
-This repository contains a set of utilities that allow the user to easily convert video files to high-quality, low file size GIFs on OS X.
+This repository contains a set of utilities that allow the user to easily convert video files to high-quality, low file size GIFs on OS X. This post is a complement to my blog post [Making a Video-to-GIF Right-Click Menu Item in OS X](http://minimaxir.com/2015/08/gif-to-video-osx/)
 
 The tool comes in three forms, depending on user needs:
 
@@ -28,7 +28,8 @@ All forms have a max GIF width of 480px; this is a value chosen to both manage f
 
 ## Known Issues
 
-* If the video has unusual dimensions (e.g. 7.00 aspect ratio), the video will not resize correctly.
-* If the video file or the parent directory has spaces, the tool may throw errors (this shouldn't happen, however)
+* If the video has unusual dimensions (e.g. 7.00 aspect ratio), the GIF output will not be resized correctly. (in fairness, you probably do not want a GIF with an unusual aspect ratio)
+* If the video file or the parent directory has spaces, the tool may throw errors.
 
-
+## Maintainer
+* Max Woolf [(@minimaxir)](https://twitter.com/minimaxir)
