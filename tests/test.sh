@@ -4,6 +4,7 @@ touch test_result.txt
 echo "Programs installed:" >> test_result.txt
 brew ls --versions mplayer ImageMagick gifsicle >> test_result.txt
 
+touch ~/.bash_profile
 source ~/.bash_profile
 
 for f in "$@"
