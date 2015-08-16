@@ -24,6 +24,16 @@ The tool comes in three forms, depending on user needs:
 
 3. Download the tool of choice. To install the Convert Video to GIF Service, download and double-click.
 
+## Tests
+
+When running into the script, you may run into an issue where the .GIF is generated, but the file size is zero bytes. That means the script errored out at some point except the "create a GIF" line.
+
+The `tests` folder contains a basic test case to debug the script. To activate the test, `cd` into the folder and run:
+
+	sh test.sh test_video.mov
+	
+This outputs a `test_results.txt` in addition to the test GIF. If `test_results.txt` matches `expected_results.txt`, you should be good to go. If there is a discrepency, send me the output of `test_results.txt`.
+
 ## Notes
 
 All forms have a max GIF width of 480px; this is a value chosen to both manage file size and compatability with all applications. If you wish to create larger GIFs, open up the tool and change the value of `GIF_MAX_SIZE` at the beginning of the file.

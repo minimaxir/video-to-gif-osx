@@ -1,0 +1,21 @@
+Programs installed:
+mplayer 1.1.1
+ImageMagick 6.8.9-8
+gifsicle 1.86
+
+Directory: .
+File Name: test_video.mov
+
+Video Width: 1216
+Video Height: 908
+Aspect Ratio: 1.33921
+
+Final Width: 480
+Final Height: 358
+
+mplayer number of video frames:      432.
+
+ImageMagick convert file size:   111354 .temp.gif
+
+gifsicle optimization file size:    73553 test_video.gif
+
