@@ -2,7 +2,7 @@ rm test_result.txt
 touch test_result.txt
 
 echo "Programs installed:" >> test_result.txt
-brew ls --versions mplayer ImageMagick gifsicle >> test_result.txt
+/usr/local/bin/brew ls --versions mplayer ImageMagick gifsicle >> test_result.txt
 
 touch ~/.bash_profile
 source ~/.bash_profile
@@ -23,7 +23,7 @@ do
 
 	cd "$dir"
 
-	video_properties=$(mplayer -really-quiet -ao null -vo null -identify -frames 0 "$f")
+	video_properties=$(/usr/local/bin/mplayer -really-quiet -ao null -vo null -identify -frames 0 "$f")
 	#echo "Parsed Video Properties.\n" >> test_result.txt
 
 	video_width=$(echo $video_properties | sed -e 's/.*\ID_VIDEO_WIDTH=\([0-9]*\).*/\1/')
@@ -54,19 +54,19 @@ do
 		final_height=$video_height
 	fi
 
-	mplayer -ao null -vo png:z=1:outdir=.temp -vf scale=$final_width:$final_height "$f"
+	/usr/local/bin/mplayer -ao null -vo png:z=1:outdir=.temp -vf scale=$final_width:$final_height "$f"
 	
 	num_renders=$(ls -l .temp | wc -l)
 	#echo "mplayer renders successful." >> test_result.txt
 	echo "mplayer number of video frames: $num_renders.\n" >> test_result.txt
 
-	convert +repage -fuzz 1.6% -delay 1.7 -loop 0 .temp/*.png -layers OptimizePlus -layers OptimizeTransparency .temp.gif
+	/usr/local/bin/convert +repage -fuzz 1.6% -delay 1.7 -loop 0 .temp/*.png -layers OptimizePlus -layers OptimizeTransparency .temp.gif
 	
 	file_size_imagemagick=$(wc -c .temp.gif)
 	#echo "ImageMagick convert successful." >> test_result.txt
 	echo "ImageMagick convert file size: $file_size_imagemagick\n" >> test_result.txt
 
-	gifsicle -O3 --colors 256 .temp.gif > "${name%.*}.gif"
+	/usr/local/bin/gifsicle -O3 --colors 256 .temp.gif > "${name%.*}.gif"
 	
 	file_size_gifsicle=$(wc -c "${name%.*}.gif")
 	#echo "gifsicle optimization successful." >> test_result.txt
