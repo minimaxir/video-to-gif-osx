@@ -3,6 +3,7 @@ mplayer 1.1.1
 ImageMagick 6.8.9-8
 gifsicle 1.86
 
+Path: test_video.mov
 Directory: .
 File Name: test_video.mov
 

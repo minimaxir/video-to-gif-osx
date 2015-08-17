@@ -7,14 +7,15 @@ brew ls --versions mplayer ImageMagick gifsicle >> test_result.txt
 touch ~/.bash_profile
 source ~/.bash_profile
 
-for f in "$@"
+for f
 do
-
 	# Change this value to increase maximum size
 	GIF_MAX_SIZE=480
 
+	echo "\nPath: $f" >> test_result.txt
+
 	dir="$(dirname "$f")"
-	echo "\nDirectory: $dir" >> test_result.txt
+	echo "Directory: $dir" >> test_result.txt
 	
 	name="$(basename "$f")"
 	echo "File Name: $name\n" >> test_result.txt
