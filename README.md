@@ -12,7 +12,7 @@ The tool comes in three forms, depending on user needs:
 * **[video_to_gif_osx.sh](https://raw.githubusercontent.com/minimaxir/video-to-gif-osx/master/video_to_gif_osx.sh)** - A Shell script which accepts video(s) as parameter(s) and outputs a GIF of the video in the same folder of the source(s).
 * **[Convert Video to GIF App](https://github.com/minimaxir/video-to-gif-osx/raw/master/Convert%20Video%20to%20GIF%20App.zip)** - An Application which prompts the user for video(s) and outputs a GIF of the video in the same folder of the source(s). (file must be unzipped on desktop; when prompted for security warning go to "Security and Privacy" in System Preference and allow Convert Video to GIF App to run)
 
-There is also a special fourth tool, [Convert Video to GIF App Custom](https://github.com/minimaxir/video-to-gif-osx/raw/master/Convert%20Video%20to%20GIF%20App%20Custom.zip) app, which is less streamlined but also allows you to specify a custom start time, end time, maximum width, frame rate, and # of colors.
+There is also a special fourth tool, [Convert Video to GIF App Custom](https://github.com/minimaxir/video-to-gif-osx/raw/master/Convert%20Video%20to%20GIF%20App%20Custom.zip) app, which is less streamlined but also allows you to specify a custom start time, end time, maximum width, frame rate, and # of colors. For example, here's a GIF of [Freedom Planet](https://en.wikipedia.org/wiki/Freedom_Planet) from a test video of 2:00 to 2:05, a max width of 640px, and 4 colors:
 
 ![](http://i.imgur.com/ZSY6RM7.gif)
 
@@ -48,7 +48,7 @@ All forms have a max GIF width of 480px; this is a value chosen to both manage f
 
 * If the video has unusual dimensions (e.g. 7.00 aspect ratio), the GIF output will not be resized correctly. (in fairness, you probably do not want a GIF with an unusual aspect ratio)
 * If the video file or the parent directory has spaces, the tool may throw errors.
-* Convert Video to GIF Custom has no sanity check for input validation yet. If you encounter any issues *specific to the Custom app*, let me know.
+* Convert Video to GIF Custom has no sanity check for input validation yet. (e.g. don't increase the frame rate beyond 60fps or bad things happen). If you encounter any issues *specific to the Custom app*, let me know.
 
 ## Maintainer
 * Max Woolf [(@minimaxir)](http://minimaxir.com)
