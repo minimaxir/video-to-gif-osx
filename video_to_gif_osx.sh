@@ -1,8 +1,7 @@
 for f
 do
-
 	# Change this value to increase maximum size
-	GIF_MAX_SIZE=480
+	GIF_MAX_SIZE=$2
 
 	dir="$(dirname "$f")"
 	name="$(basename "$f")"
@@ -41,5 +40,5 @@ do
 	# Cleanup
 	rm -rf .temp
 	rm -rf .temp.gif
-
+	rm -rf "$2.gif"
 done
